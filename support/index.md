@@ -48,4 +48,4 @@ https://oddgridstudio.github.io/modongnote-site/privacy/
 - 운영 브랜드: GRID.DEV
 - 브랜드 설명: GRID.DEV는 오드그리드(ODD GRID)의 앱 개발 브랜드입니다.
 
-모동노트는 Nintendo, Animal Crossing, 동물의 숲 공식 앱이 아니며, Nintendo와 제휴하거나 보증받은 서비스가 아닙니다.
+모동노트는 Animal Crossing 시리즈 관련 정보를 참고하여 제공되는 비공식 팬 제작 앱이며, Nintendo와 제휴, 후원, 승인 또는 보증 관계가 없습니다.
