@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="referrer" content="no-referrer" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Open MoDong Note / 모동노트에서 계속하기</title>
+    <title>모동노트에서 계속하기</title>
     <style>
       :root { color: #6e523e; background: #f8f4c7; font-family: Arial, sans-serif; }
       * { box-sizing: border-box; }
-      body { align-items: center; display: flex; justify-content: center; margin: 0; min-height: 100vh; padding: 24px; }
-      main { background: #fff; border: 1px solid rgba(110, 82, 62, .18); border-radius: 24px; max-width: 460px; padding: 32px 24px; text-align: center; width: 100%; }
-      .mark { align-items: center; background: #74e0aa; border-radius: 18px; display: flex; font-size: 26px; height: 58px; justify-content: center; margin: 0 auto 18px; width: 58px; }
-      .brand { font-size: 14px; font-weight: 700; letter-spacing: .04em; margin: 0 0 10px; }
-      h1 { font-size: 23px; line-height: 1.35; margin: 0 0 12px; }
-      p { color: rgba(110, 82, 62, .72); font-size: 15px; line-height: 1.65; margin: 0 auto; max-width: 360px; }
-      button { background: #74e0aa; border: 1px solid #6e523e; border-radius: 16px; color: #6e523e; cursor: pointer; font-size: 16px; font-weight: 700; margin-top: 26px; min-height: 52px; padding: 12px 20px; width: 100%; }
+      body { align-items: center; display: flex; justify-content: center; margin: 0; min-height: 100vh; padding: 20px; }
+      main { background: #fff; border-radius: 24px; max-width: 400px; padding: 40px 28px 32px; text-align: center; width: 100%; }
+      .brand { align-items: center; color: #6e523e; display: inline-flex; font-size: 14px; font-weight: 700; gap: 8px; letter-spacing: .02em; margin: 0 0 32px; }
+      .brand::before { background: #74e0aa; border-radius: 8px 8px 8px 2px; content: ''; display: inline-block; height: 14px; transform: rotate(-20deg); width: 14px; }
+      h1 { font-size: 24px; letter-spacing: -.03em; line-height: 1.35; margin: 0 0 14px; }
+      p { color: rgba(110, 82, 62, .72); font-size: 14px; line-height: 1.6; margin: 0 auto; max-width: 310px; }
+      button { background: #74e0aa; border: 0; border-radius: 14px; color: #6e523e; cursor: pointer; font-size: 16px; font-weight: 700; margin-top: 28px; min-height: 52px; padding: 12px 20px; transition: background .15s ease, transform .15s ease; width: 100%; }
+      button:hover { background: #63d39c; }
+      button:active { transform: translateY(1px); }
       button:focus-visible { outline: 3px solid #fdc0c7; outline-offset: 3px; }
-      .notice { font-size: 12px; margin-top: 18px; }
+      .notice { color: rgba(110, 82, 62, .55); font-size: 12px; margin-top: 18px; }
       .error { display: none; }
       .has-error .normal { display: none; }
       .has-error .error { display: block; }
@@ -26,19 +28,18 @@
   </head>
   <body>
     <main id="card">
-      <div class="mark" aria-hidden="true">🍃</div>
       <p class="brand">MoDong Note · 모동노트</p>
 
       <section class="normal">
-        <h1>Continue in MoDong Note<br />모동노트에서 계속하기</h1>
-        <p>Verify your request, then open the app to create a new password.<br />요청을 확인한 뒤 앱에서 새 비밀번호를 만들어 주세요.</p>
-        <button id="open-app" type="button">Open MoDong Note<br />모동노트 열기</button>
-        <p class="notice">If the app does not open, install the latest MoDong Note app and try again.<br />앱이 열리지 않으면 최신 모동노트를 설치한 뒤 다시 시도해 주세요.</p>
+        <h1>새 비밀번호를 만들어 주세요</h1>
+        <p>인증이 완료되었습니다.<br />앱으로 돌아가 비밀번호를 변경해 주세요.</p>
+        <button id="open-app" type="button">모동노트 열기</button>
+        <p class="notice">Continue in the MoDong Note app</p>
       </section>
 
       <section class="error" aria-live="polite">
-        <h1>This reset link cannot be used<br />이 재설정 링크를 사용할 수 없어요</h1>
-        <p>It may have expired, already been used, or been opened by a mail security scanner. Request a new password-reset link in the app.<br />링크가 만료되었거나 이미 사용되었을 수 있어요. 앱에서 새 재설정 링크를 요청해 주세요.</p>
+        <h1>링크를 사용할 수 없어요</h1>
+        <p>링크가 만료되었거나 이미 사용되었을 수 있어요.<br />앱에서 새 비밀번호 재설정 링크를 요청해 주세요.</p>
       </section>
     </main>
 
